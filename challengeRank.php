@@ -36,10 +36,8 @@ for ($i = 0; $i < $tmpScoreCount; $i++) {
 for ($i = 0; $i < 3; $i++) {
 	$layer = ceil($score[$i]/5);
 	$point = $score[$i] % 5;
-	if ($point == 0) {
+	if ($point == 0)
 		$point = 5;
-		$layer -= 1;
-	}
 	array_push($layerArr, $layer);
 	array_push($pointArr, $point);
 }
